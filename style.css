@@ -29,7 +29,7 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 b{
-    font-weight: bold;
+    font-weight: 600;
 }
 a{
     text-decoration: none;
@@ -115,7 +115,33 @@ h1{
 }
 .caption{
     font-size: 1.3em;
-    margin-top: 85px;
+
+}
+.size{
+    position: relative;
+}
+.size:hover{
+    cursor: pointer;
+}
+.size:hover .size-list{
+    visibility: visible;   
+}
+.size-list{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+.size-list ul li{
+    width: 40px;
+    height: 25px;
+    border-bottom: 1px solid black;
+    line-height: 25px;
+}
+.size-list ul li:hover{
+    cursor: pointer;
+    background-color: rgb(170, 155, 119);
+    color: white;
 }
 .col-27{
     width: 27%;
@@ -183,11 +209,66 @@ h1{
 hr{
     height: 1px;
     width: 90%;
-    margin: 95px 0;
+    margin-bottom: 95px;
 }
 .show{
     visibility: visible;
 }
 .hide{
     display: none;
+}
+#about{
+    background-color: rgb(170, 155, 119);
+    padding: 80px 0;
+}
+.about{
+    color: #837659;
+    background-color: rgb(170, 155, 119);
+    padding: 17px 0;
+    position: absolute;
+    top: -30px;
+    left: 43%;
+    right: 43%;
+    font-size: 1.1em;
+}
+.info{
+    width: 60%;
+    padding: 75px 120px;
+    border:3px solid #837659;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-size: 0.9em;
+}
+[id*="sec-"]{
+    margin: 95px 0;
+}
+footer{
+    background-color: #424242;
+    color: white;
+    padding: 110px 0;
+}
+.col-30{
+    width: 30%;
+    font-size: 0.8em;
+}
+h6{
+    font-size: 1.4em; 
+}
+.col-22{
+    width: 25%;
+    font-size: 0.9em;
+    padding: 30px 0;
+    text-align: right;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu li{
+    padding: 0 10px;
+    border-left: 1px solid rgb(170, 155, 119);
+}
+.footer-menu li:first-child{
+    border: none;
 }
