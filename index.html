@@ -4,9 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Trekking</title>
 </head>
 <body>
-    
+    <header >
+        <div class="container">
+            <nav>
+                <div class="row">
+                    <div class="col-10 logo">
+                        <img src="images/logo-trek.png" alt="">
+                    </div>
+                    <div class="col-23">
+                        <ul class="menu">
+                            <li><a href="#"><b>Home</b></a></li>
+                            <li><a href=""><b>Products</b></a></li>
+                            <li><a href=""><img src="images/cart.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>            
+    </header>
+    <main>
+        <section id="present">
+            <div class="container">
+                <div class="column">
+                    <div class="col-70">
+                        <h1><b>Our clothing, your comfort</b></h1>
+                    </div>
+                    <div class="col-55">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fugiat error nam facilis omnis dolor. Nam labore incidunt eveniet placeat maiores voluptates culpa odit expedita, rem iste possimus cumque consectetur.</p>
+                    </div>
+                    <div class="chev"><img src="images/chevron-down.png" alt=""></div>
+                </div>
+            </div>   
+        </section>
+        <section id="products">
+            <div class="container">
+                <div class="row">
+                    <ul class="prod-menu">
+                        <li>
+                            <label for="men"><input type="checkbox" name="men" id="men" checked> MEN</label>
+                            <label for="women"><input type="checkbox" name="women" id="women" checked> WOMEN</label>
+                            <label for="children"><input type="checkbox" name="children" id="children"> CHILDREN</label>
+                        </li>
+                    </ul>
+                    <button class="see-all">SEE ALL PRODUCTS</button>
+                </div>
+            </div>
+            
+        </section>
+        <section id="sec-men" class="show">
+            <div class="container">
+                <div class="row"><div class="caption"><b>MEN</b></div><hr></div>
+                <div class="row">
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>SIZE<i class="fa fa-chevron-down"></i></b></div>
+                            <div class="colors">
+                                <div class="blue"></div>
+                                <div class="yellow"></div>
+                                <div class="black"></div>
+                            </div>
+                        </div>
+                        <img src="images/tshirt.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">T-SHIRT</span></b></div>
+                            <div class="price"><b>5,00&#8364</b></div>
+                        </div>
+                    </div>
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>SIZE<i class="fa fa-chevron-down"></i></b></div>
+                        </div>
+                        <img src="images/trousers.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">PANTS FORCLATZ</span></b></div>
+                            <div class="price"><b>30,00&#8364</b></div>
+                        </div>
+                    </div>
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>10LITRI</b></div>
+                        </div>
+                        <img src="images/backpack.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">PANTS FORCLATZ</span></b></div>
+                            <div class="price"><b>60,00&#8364</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec-women" class="show">
+            <div class="container">
+                <div class="row"><hr><div class="caption"><b>WOMEN</b></div></div>
+                <div class="row">
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>SIZE<i class="fa fa-chevron-down"></i></b></div>
+                            
+                        </div>
+                        <img src="images/jacket.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">GIACKET</span></b></div>
+                            <div class="price"><b>60,00&#8364</b></div>
+                        </div>
+                    </div>
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>SIZE<i class="fa fa-chevron-down"></i></b></div>
+                        </div>
+                        <img src="images/cross.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">TREKKING SHOES</span></b></div>
+                            <div class="price"><b>80,00&#8364</b></div>
+                        </div>
+                    </div>
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>SIZE<i class="fa fa-chevron-down"></i></b></div>
+                            <div class="colors">
+                                <div class="pink"></div>
+                                <div class="white"></div>
+                            </div>
+                        </div>
+                        <img src="images/woman-tshirt.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">T-SHIRT</span></b></div>
+                            <div class="price"><b>20,00&#8364</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec-children" class="hide">
+            <div class="container">
+                <div class="row"><div class="caption"><b>CHILDREN</b></div><hr></div>
+                <div class="row">
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>SIZE<i class="fa fa-chevron-down"></i></b></div>
+                            <div class="colors">
+                                <div class="blue"></div>
+                                <div class="yellow"></div>
+                                <div class="black"></div>
+                            </div>
+                        </div>
+                        <img src="images/tshirt.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">T-SHIRT</span></b></div>
+                            <div class="price"><b>5,00&#8364</b></div>
+                        </div>
+                    </div>
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>SIZE<i class="fa fa-chevron-down"></i></b></div>
+                        </div>
+                        <img src="images/trousers.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">PANTS FORCLATZ</span></b></div>
+                            <div class="price"><b>30,00&#8364</b></div>
+                        </div>
+                    </div>
+                    <div class="col-27">
+                        <div class="row">
+                            <div class="size"><b>10LITRI</b></div>
+                        </div>
+                        <img src="images/backpack.png" alt="">
+                        <div class="row">
+                            <div class="size"><b><span class="sepia">PANTS FORCLATZ</span></b></div>
+                            <div class="price"><b>60,00&#8364</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
