@@ -50,8 +50,7 @@ p{
 .column{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
+    align-items: center;
 }
 header{
     position: absolute;
@@ -103,7 +102,45 @@ h1{
 }
 .prod-menu{
     display: flex;   
-    padding: 10px 0; 
+    padding: 10px 20px; 
+}
+.prod-menu input{
+    display: none;
+    position: relative;
+}
+label::before {
+    position: absolute;
+    left: -15px;
+    top: -5px;
+    content: '';
+    display: inline-block;
+    width: 1.2em;
+    height: 1.1em;
+    border: 3px solid rgb(170, 155, 119);
+    border-radius: 0.35em;
+}
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label{
+    display: inline-block;
+    position: relative;
+    padding: 0 28px;
+    cursor: pointer;
+}
+.prod-menu input[type="checkbox"]:checked+label::after{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -9px;
+    width: 9px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid rgb(170, 155, 119);
+    border-bottom: 4px solid rgb(170, 155, 119);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .see-all{
     background-color: rgb(170, 155, 119);
@@ -112,10 +149,10 @@ h1{
     height: 55px;
     border-radius: 5px;
     border: 0;
+    cursor: pointer;
 }
 .caption{
     font-size: 1.3em;
-
 }
 .size{
     position: relative;
