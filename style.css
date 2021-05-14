@@ -285,6 +285,14 @@ footer{
     color: white;
     padding: 110px 0;
 }
+.ecom{
+    background-color: #535253;
+    color: white;
+    padding: 23px 0;
+}
+.ecom img{
+    margin-right: 20px;
+}
 .col-30{
     width: 30%;
     font-size: 0.8em;
